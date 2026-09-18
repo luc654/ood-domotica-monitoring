@@ -1,0 +1,45 @@
+using System.Runtime.CompilerServices;
+
+namespace ood_domotica_monitoring;
+
+public class CampusScreen
+{
+    private static bool running = true;
+	private static terminalHelper helper = new terminalHelper();
+
+    public static void loop()
+    {
+        List<string> options = new List<string>
+        {
+            "Select Building",
+            "Calculate average of all buildings",
+            "Add building",
+            "Close",
+        };
+        
+
+        while (running)
+        {
+            switch (helper.handleTerminal(options, "Campus overview", "Select option to continue"))
+            {
+                case 0:
+                {
+                    selectBuildings();
+                    break;
+                }
+                case 1:
+                {
+                    CampusScreen.loop();
+                    break;
+                }
+            }
+        }
+    }
+
+
+    private static void selectBuildings()
+    {
+        int selectedBuildingIndex = helper.handleTerminal(Program.GlobalContext.campus.getBuildingNamesAndID(), "Campus overview", "Select building to inspect");
+        
+    }
+}
