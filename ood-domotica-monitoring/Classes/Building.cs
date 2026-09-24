@@ -13,6 +13,7 @@ public class Building
         this.zoneList = new List<Zone>();
     }
 
+    // this is short code for read only variable, expression-bodied member 
     public int Id => id;
     public string Name => name;
 
@@ -36,5 +37,15 @@ public class Building
             selectedZone = zoneList.First();
         }
         return selectedZone;
+    }
+    public List<string> getZoneNamesAndID()
+    {
+        List<string> returnList = new List<string>();
+        foreach (var zone in this.zoneList)
+        {
+            returnList.Add($"{zone.Id.ToString()} {zone.Name}");
+        }
+
+        return returnList;
     }
 }
