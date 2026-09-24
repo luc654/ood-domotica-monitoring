@@ -40,7 +40,8 @@ public class CampusScreen
 
     private static int selectBuildings()
     {
+        // I dont know how to explain, but one side is 0 based index while the other is 1 based index? just add 1 to the returnvaluu 
         int selectedBuildingIndex = helper.handleTerminal(Program.GlobalContext.campus.getBuildingNamesAndID(), "Campus overview", "Select building to inspect");
-        return selectedBuildingIndex;
+        return selectedBuildingIndex + 1;
     }
 }
