@@ -14,13 +14,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6d0cafad-331f-432f-9232-d7732b94419a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/ood-domotica-monitoring/Classes/Component.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ood-domotica-monitoring/Classes/ComponentSubclass/Device.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ood-domotica-monitoring/Screens/BuildingScreen.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ood-domotica-monitoring/Screens/ZoneScreen.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ood-domotica-monitoring/Classes/Building.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ood-domotica-monitoring/Classes/Building.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ood-domotica-monitoring/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ood-domotica-monitoring/Program.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ood-domotica-monitoring/utils/Screen.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ood-domotica-monitoring/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ood-domotica-monitoring/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ood-domotica-monitoring/Screens/BuildingScreen.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ood-domotica-monitoring/Screens/BuildingScreen.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ood-domotica-monitoring/Screens/CampusScreen.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ood-domotica-monitoring/Screens/CampusScreen.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ood-domotica-monitoring/Screens/ZoneScreen.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ood-domotica-monitoring/Screens/ZoneScreen.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,23 +37,26 @@
     &quot;assignee&quot;: &quot;luc654&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/luc654/ood-domotica-monitoring",
-    "accountId": "26de1ff6-ea86-4e34-8059-b40d540e7401"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/luc654/ood-domotica-monitoring&quot;,
+    &quot;accountId&quot;: &quot;26de1ff6-ea86-4e34-8059-b40d540e7401&quot;
   }
-}]]></component>
+}</component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/ood-domotica-monitoring/Classes/Building.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ood-domotica-monitoring/Classes/Campus.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ood-domotica-monitoring/Classes/Component.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ood-domotica-monitoring/Classes/ComponentSubclass/Device.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ood-domotica-monitoring/Classes/Zone.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/ood-domotica-monitoring/Enums/componentEnums.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ood-domotica-monitoring/Screens/BuildingScreen.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ood-domotica-monitoring/Screens/CampusScreen.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ood-domotica-monitoring/Screens/ZoneScreen.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ood-domotica-monitoring/utils/DataLoader.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ood-domotica-monitoring/utils/Screen.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///home/lucas/RiderProjects/ood-domotica-monitoring/ood-domotica-monitoring/Screens/BuildingScreen.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///home/lucas/RiderProjects/ood-domotica-monitoring/ood-domotica-monitoring/Screens/CampusScreen.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///home/lucas/RiderProjects/ood-domotica-monitoring/ood-domotica-monitoring/Screens/ZoneScreen.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="McpProjectServerCommands">
     <commands />
@@ -64,61 +65,61 @@
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.4785676819514098" />
-      <entry key="MS500" value="3.014143650418618" />
-      <entry key="S2" value="6.441304727402433" />
-      <entry key="S5" value="10.918564301166137" />
-      <entry key="S10" value="14.072424258841048" />
-      <entry key="S30" value="17.09983943341313" />
-      <entry key="S60" value="18.0339440662105" />
-      <entry key="M2" value="19.166170193383074" />
-      <entry key="M5" value="25.805563164176306" />
-      <entry key="M10" value="40.80522835651794" />
-      <entry key="M15" value="55.20212179522254" />
-      <entry key="M30" value="90.15862297740355" />
-      <entry key="H1" value="137.54377650431127" />
-      <entry key="H2" value="185.40175085293845" />
-      <entry key="H4" value="221.44655397701388" />
-      <entry key="D1" value="260.8441773451884" />
-      <entry key="W1" value="268.66295990978597" />
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0" />
+      <entry key="S2" value="1.0" />
+      <entry key="S5" value="1.0" />
+      <entry key="S10" value="1.0000000000018774" />
+      <entry key="S30" value="1.0002332070989528" />
+      <entry key="S60" value="1.041155886570359" />
+      <entry key="M2" value="1.857650155369579" />
+      <entry key="M5" value="9.802371575847008" />
+      <entry key="M10" value="24.51556069683275" />
+      <entry key="M15" value="37.977616025841776" />
+      <entry key="M30" value="77.8300670332471" />
+      <entry key="H1" value="145.6035261957077" />
+      <entry key="H2" value="227.40135057858356" />
+      <entry key="H4" value="297.4960588044539" />
+      <entry key="D1" value="382.15516524367735" />
+      <entry key="W1" value="399.9289001465828" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
-      <entry key="MS500" value="0.0" />
-      <entry key="S2" value="4.154991285115178E-93" />
-      <entry key="S5" value="1.9743587682752167E-37" />
-      <entry key="S10" value="9.12263152941564E-19" />
-      <entry key="S30" value="3.077611298501635E-6" />
-      <entry key="S60" value="0.004531927251893462" />
-      <entry key="M2" value="0.1924035647799946" />
-      <entry key="M5" value="2.0430456089859343" />
-      <entry key="M10" value="4.86070670368081" />
-      <entry key="M15" value="6.774399379911253" />
-      <entry key="M30" value="10.860258948831975" />
-      <entry key="H1" value="16.909947195845536" />
-      <entry key="H2" value="23.56918422274063" />
-      <entry key="H4" value="28.79188916604734" />
-      <entry key="D1" value="34.62889993265429" />
-      <entry key="W1" value="35.79947764421671" />
+      <entry key="MS500" value="8.561091013517218E-281" />
+      <entry key="S2" value="9.641232003350445E-71" />
+      <entry key="S5" value="1.0713571172064531E-28" />
+      <entry key="S10" value="1.2869817378408334E-14" />
+      <entry key="S30" value="3.8458168275602955E-5" />
+      <entry key="S60" value="0.012494614041029434" />
+      <entry key="M2" value="0.3472641734581053" />
+      <entry key="M5" value="3.5794259224408016" />
+      <entry key="M10" value="8.757160289184101" />
+      <entry key="M15" value="12.535545584379115" />
+      <entry key="M30" value="20.320839627000765" />
+      <entry key="H1" value="30.314499826366124" />
+      <entry key="H2" value="41.59088712398979" />
+      <entry key="H4" value="51.261080688104435" />
+      <entry key="D1" value="63.069665566354026" />
+      <entry key="W1" value="65.56772145057914" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="1.418333113516242" />
-      <entry key="MS500" value="2.7875532760437673" />
-      <entry key="S2" value="6.271735118000091" />
-      <entry key="S5" value="10.826062272534735" />
-      <entry key="S10" value="14.020021577312146" />
-      <entry key="S30" value="17.080686675925193" />
-      <entry key="S60" value="18.02854971867306" />
-      <entry key="M2" value="19.351525657383288" />
-      <entry key="M5" value="27.837032923049957" />
-      <entry key="M10" value="45.65266384974068" />
-      <entry key="M15" value="61.96382481487731" />
-      <entry key="M30" value="101.00738286454417" />
-      <entry key="H1" value="154.44319583604093" />
-      <entry key="H2" value="208.96276982019805" />
-      <entry key="H4" value="250.23317428843404" />
-      <entry key="D1" value="295.47197289314056" />
-      <entry key="W1" value="304.46227322828184" />
+      <entry key="MS100" value="0.9726549474122855" />
+      <entry key="MS500" value="0.9944701686732144" />
+      <entry key="S2" value="0.9986146661010289" />
+      <entry key="S5" value="0.9994456359721023" />
+      <entry key="S10" value="0.9997227795622541" />
+      <entry key="S30" value="1.0001746210913494" />
+      <entry key="S60" value="1.0531694765980182" />
+      <entry key="M2" value="2.2003943756653936" />
+      <entry key="M5" value="13.364384653687319" />
+      <entry key="M10" value="33.25131125530427" />
+      <entry key="M15" value="50.492808383946034" />
+      <entry key="M30" value="98.13419919594983" />
+      <entry key="H1" value="175.90443553300898" />
+      <entry key="H2" value="268.98177247264084" />
+      <entry key="H4" value="348.7501443781526" />
+      <entry key="D1" value="445.2232820038211" />
+      <entry key="W1" value="465.4963884062669" />
     </decayedShown>
   </component>
   <component name="ProblemsViewState">
@@ -135,31 +136,36 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    ".NET Project.ood-domotica-monitoring.executor": "Run",
-    "RunOnceActivity.MCP Project settings loaded": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.cidr.known.project.marker": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.readMode.enableVisualFormatting": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "cidr.known.project.marker": "true",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "git-widget-placeholder": "master",
-    "junie.onboarding.icon.badge.shown": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "editor.preferences.completion.inline",
-    "to.speed.mode.migration.done": "true",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;.NET Project.ood-domotica-monitoring.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.completion.inline&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
+      &quot;GitIgnore&quot;
+    ]
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="ood-domotica-monitoring" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
@@ -228,7 +234,13 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="init: initial commit" />
     <MESSAGE value="Feat: CLI package" />
-    <option name="LAST_COMMIT_MESSAGE" value="Feat: CLI package" />
+    <MESSAGE value="Feat: function for displaying all zones" />
+    <MESSAGE value="init: screens" />
+    <MESSAGE value="Feat: data loaded notification" />
+    <MESSAGE value="init: component Device sensor classes" />
+    <MESSAGE value="forgot to add to .gitignore" />
+    <MESSAGE value="Fixed: 0 to 1 based index conversion" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed: 0 to 1 based index conversion" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

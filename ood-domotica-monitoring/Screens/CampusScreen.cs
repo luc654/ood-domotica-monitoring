@@ -25,7 +25,7 @@ public class CampusScreen
                 case 0:
                 {
                     int indexBuilding = selectBuildings();
-                    BuildingScreen.loop(indexBuilding);
+                    new BuildingScreen(indexBuilding).Loop();
                     break;
                 }
                 case 1:

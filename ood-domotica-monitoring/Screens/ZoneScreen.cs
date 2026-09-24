@@ -2,54 +2,55 @@ using ood_domotica_monitoring.Classes;
 
 namespace ood_domotica_monitoring;
 
-public class ZoneScreen
+
+
+
+
+
+
+
+public class ZoneScreen : Screen
 {
     private static terminalHelper helper = new terminalHelper();
     private static bool running = true;
-    private static Zone zone = null;
-    
-    public static void loop(int zoneId, Building building)
-    {
-        zone = building.getZoneByID(zoneId);
-        
-        List<string> options = new List<string>
-        {
-            "Select Sensor",
-            "Select Device",
-            "Add new Sensor",
-            "Add new Device",
-            $"Back to {building.Name}",
-        };
-        
+    private readonly Building building;
+    private readonly Zone zone;
 
-        while (running)
+    public ZoneScreen(int zoneId, Building building)
+    {
+        this.building = building;
+        this.zone = building.getZoneByID(zoneId);
+    }
+
+    protected override string Title => $"{zone.Name} overview";
+    
+    protected override List<string> Options => new List<string>
+    {
+        "Select Sensor",
+        "Select Device",
+        "Add new Sensor",
+        "Add new Device",
+        $"Back to {building.Name}",
+    };
+
+    protected override void HandleOption(int selected)
+    {
+        switch (selected)
         {
-            switch (helper.handleTerminal(options, $"{zone.Name} overview", "Select option to continue"))
-            {
-                case 0:
-                {
-                    // selectZone();
-                    throw new NotImplementedException();
-                    break;
-                }
-                case 1:
-                {
-                    CampusScreen.loop();
-                    break;
-                }
-                case 2:
-                {
-                    throw new NotImplementedException();
-                }
-                case 3:
-                {
-                    throw new NotImplementedException();
-                }
-                case 4:
-                {
-                    return;
-                }
-            }
+            case 0:
+                // TODO select sensor
+                break;
+            case 1:
+                // TODO Select device
+                break;
+            case 2:
+                // TODO Add sennor
+                break;
+            case 3:
+                // TODO Add device
+                break;
+            case 4:
+                return;
         }
     }
 
