@@ -24,7 +24,8 @@ public class CampusScreen
             {
                 case 0:
                 {
-                    selectBuildings();
+                    int indexBuilding = selectBuildings();
+                    BuildingScreen.loop(indexBuilding);
                     break;
                 }
                 case 1:
@@ -37,9 +38,9 @@ public class CampusScreen
     }
 
 
-    private static void selectBuildings()
+    private static int selectBuildings()
     {
         int selectedBuildingIndex = helper.handleTerminal(Program.GlobalContext.campus.getBuildingNamesAndID(), "Campus overview", "Select building to inspect");
-        
+        return selectedBuildingIndex;
     }
 }
