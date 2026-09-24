@@ -7,6 +7,7 @@ public class Program
 	public static void Main()
 	{
 		bool running = true;
+		
 		List<string> options = new List<string>
 		{
 			"Laadt data in",
@@ -21,6 +22,7 @@ public class Program
 			case 0:
 			{
 				DataLoader.loadData();
+				Program.GlobalContext.notification = "Data ingeladen";
 				break;
 			}
 			case 1:
