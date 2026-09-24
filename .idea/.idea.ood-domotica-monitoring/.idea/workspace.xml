@@ -6,14 +6,21 @@
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
+  <component name="CMakeProjectFlavorService">
+    <option name="flavorId" value="CMakePlainProjectFlavor" />
+  </component>
+  <component name="CMakeSettings">
+    <configurations />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="6d0cafad-331f-432f-9232-d7732b94419a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/ood-domotica-monitoring/Classes/Building.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ood-domotica-monitoring/Classes/Campus.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ood-domotica-monitoring/Classes/Zone.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ood-domotica-monitoring/Screens/CampusScreen.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ood-domotica-monitoring/utils/DataLoader.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ood-domotica-monitoring/Classes/Component.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ood-domotica-monitoring/Classes/ComponentSubclass/Device.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ood-domotica-monitoring/Screens/BuildingScreen.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ood-domotica-monitoring/Screens/ZoneScreen.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ood-domotica-monitoring/Classes/Building.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ood-domotica-monitoring/Classes/Building.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ood-domotica-monitoring/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ood-domotica-monitoring/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ood-domotica-monitoring/Screens/CampusScreen.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ood-domotica-monitoring/Screens/CampusScreen.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,29 +33,100 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "luc654"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;luc654&quot;
   }
-}]]></component>
+}</component>
   <component name="GithubPullRequestsUISettings"><![CDATA[{
   "selectedUrlAndAccountId": {
-    "url": "https://github.com/luc654/ood-domotica-monitoring.git",
-    "accountId": "87221ca2-2623-4eee-9e93-3812d3eb589a"
+    "url": "https://github.com/luc654/ood-domotica-monitoring",
+    "accountId": "26de1ff6-ea86-4e34-8059-b40d540e7401"
   }
 }]]></component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/ood-domotica-monitoring/Classes/Building.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ood-domotica-monitoring/Classes/Campus.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ood-domotica-monitoring/Classes/Component.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ood-domotica-monitoring/Classes/ComponentSubclass/Device.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ood-domotica-monitoring/Classes/Zone.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ood-domotica-monitoring/Enums/componentEnums.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ood-domotica-monitoring/Screens/BuildingScreen.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ood-domotica-monitoring/Screens/CampusScreen.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ood-domotica-monitoring/Screens/ZoneScreen.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ood-domotica-monitoring/utils/DataLoader.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
+  </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 2
-}]]></component>
+  <component name="NextEditCompletionFeaturesState">
+    <decayedCancelled>
+      <entry key="MS100" value="1.4785676819514098" />
+      <entry key="MS500" value="3.014143650418618" />
+      <entry key="S2" value="6.441304727402433" />
+      <entry key="S5" value="10.918564301166137" />
+      <entry key="S10" value="14.072424258841048" />
+      <entry key="S30" value="17.09983943341313" />
+      <entry key="S60" value="18.0339440662105" />
+      <entry key="M2" value="19.166170193383074" />
+      <entry key="M5" value="25.805563164176306" />
+      <entry key="M10" value="40.80522835651794" />
+      <entry key="M15" value="55.20212179522254" />
+      <entry key="M30" value="90.15862297740355" />
+      <entry key="H1" value="137.54377650431127" />
+      <entry key="H2" value="185.40175085293845" />
+      <entry key="H4" value="221.44655397701388" />
+      <entry key="D1" value="260.8441773451884" />
+      <entry key="W1" value="268.66295990978597" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="0.0" />
+      <entry key="S2" value="4.154991285115178E-93" />
+      <entry key="S5" value="1.9743587682752167E-37" />
+      <entry key="S10" value="9.12263152941564E-19" />
+      <entry key="S30" value="3.077611298501635E-6" />
+      <entry key="S60" value="0.004531927251893462" />
+      <entry key="M2" value="0.1924035647799946" />
+      <entry key="M5" value="2.0430456089859343" />
+      <entry key="M10" value="4.86070670368081" />
+      <entry key="M15" value="6.774399379911253" />
+      <entry key="M30" value="10.860258948831975" />
+      <entry key="H1" value="16.909947195845536" />
+      <entry key="H2" value="23.56918422274063" />
+      <entry key="H4" value="28.79188916604734" />
+      <entry key="D1" value="34.62889993265429" />
+      <entry key="W1" value="35.79947764421671" />
+    </decayedSelected>
+    <decayedShown>
+      <entry key="MS100" value="1.418333113516242" />
+      <entry key="MS500" value="2.7875532760437673" />
+      <entry key="S2" value="6.271735118000091" />
+      <entry key="S5" value="10.826062272534735" />
+      <entry key="S10" value="14.020021577312146" />
+      <entry key="S30" value="17.080686675925193" />
+      <entry key="S60" value="18.02854971867306" />
+      <entry key="M2" value="19.351525657383288" />
+      <entry key="M5" value="27.837032923049957" />
+      <entry key="M10" value="45.65266384974068" />
+      <entry key="M15" value="61.96382481487731" />
+      <entry key="M30" value="101.00738286454417" />
+      <entry key="H1" value="154.44319583604093" />
+      <entry key="H2" value="208.96276982019805" />
+      <entry key="H4" value="250.23317428843404" />
+      <entry key="D1" value="295.47197289314056" />
+      <entry key="W1" value="304.46227322828184" />
+    </decayedShown>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="3JV5W1NEwWEsms00Zkjk4dCjFGN" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -60,17 +138,25 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     ".NET Project.ood-domotica-monitoring.executor": "Run",
+    "RunOnceActivity.MCP Project settings loaded": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
     "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.readMode.enableVisualFormatting": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "cidr.known.project.marker": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
     "git-widget-placeholder": "master",
+    "junie.onboarding.icon.badge.shown": "true",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "editor.preferences.inline.completion",
+    "settings.editor.selected.configurable": "editor.preferences.completion.inline",
+    "to.speed.mode.migration.done": "true",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -161,5 +247,9 @@
         </breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
