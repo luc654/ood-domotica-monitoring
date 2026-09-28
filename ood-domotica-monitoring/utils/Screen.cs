@@ -17,4 +17,11 @@ public abstract class Screen
             HandleOption(selected);
         }
     }
+
+    public void showFormattedString(string value)
+    {
+        List<string> returnButton = new List<string>() { "terug" };
+        Program.GlobalContext.notification = "";
+        helper.handleTerminal(returnButton, "", value);
+    }
 }
