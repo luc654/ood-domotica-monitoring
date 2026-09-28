@@ -1,6 +1,8 @@
 using ood_domotica_monitoring.Classes;
 
 public abstract class Sensor : Component
+
+// Yes i formatted the code and added some bullshit documentation using 'ai', im only a luddite when opposed to a clear moral absolutism like AI 'art'
 {
     public int LastValue { get; protected set; }
     public bool HasBenchmark { get; protected set; }
@@ -86,7 +88,7 @@ public abstract class Sensor : Component
         protected override int ReadValue()
         {
             
-            return new Random().Next(0, MaxUsage + 20); // can exceed max on purpose to trigger benchmark warning
+                return new Random().Next(0, MaxUsage + 20); // can exceed max on purpose to trigger benchmark warning | wow thanks for the explanation captain obvious   
         }
     }
     
