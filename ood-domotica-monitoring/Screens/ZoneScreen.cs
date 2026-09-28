@@ -11,7 +11,6 @@ namespace ood_domotica_monitoring;
 
 public class ZoneScreen : Screen
 {
-    private static terminalHelper helper = new terminalHelper();
     private readonly Building building;
     private readonly Zone zone;
 
@@ -37,7 +36,8 @@ public class ZoneScreen : Screen
         switch (selected)
         {
             case 0:
-                // TODO select sensor
+                Sensor sensor = selectSensor();
+                new SensorScreen(zone, sensor).Loop();
                 break;
             case 1:
                 // TODO Select device
@@ -55,12 +55,13 @@ public class ZoneScreen : Screen
     }
 
 
-    private static void selectSensor()
+    private Sensor selectSensor()
     {
-        // int selectedSensorIndex = helper.handleTerminal(building.getZoneNamesAndID(), "Building overview", "Select zone to inspect");
-        throw new NotImplementedException();
+        int selectedSensorIndex = helper.handleTerminal(zone.getSensorNamesAndID(), "Zone inspection", "Select sensor to inspect");
+        Sensor selectedSensor = zone.getSensors()[selectedSensorIndex];
+        return selectedSensor;
     }   
-    private static void selectDevice()
+    private void selectDevice()
     {
         // int selectedSensorIndex = helper.handleTerminal(building.getZoneNamesAndID(), "Building overview", "Select zone to inspect");
         throw new NotImplementedException();
