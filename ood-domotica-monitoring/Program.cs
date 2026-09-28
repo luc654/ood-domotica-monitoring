@@ -11,6 +11,7 @@ public class Program
 		List<string> options = new List<string>
 		{
 			"Laadt data in",
+			"Seed componenten",
 			"Begin scernario"
 		};
 		terminalHelper helper = new terminalHelper();
@@ -26,6 +27,20 @@ public class Program
 				break;
 			}
 			case 1:
+			{
+				// seedComponents throws when there are no zones yet, show that as a notification instead of crashing
+				try
+				{
+					DataLoader.seedComponents();
+					Program.GlobalContext.notification = "Componenten toegevoegd";
+				}
+				catch (InvalidOperationException e)
+				{
+					Program.GlobalContext.notification = e.Message;
+				}
+				break;
+			}
+			case 2:
 			{
 				CampusScreen.loop();
 				break;
