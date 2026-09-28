@@ -12,7 +12,6 @@ namespace ood_domotica_monitoring;
 public class ZoneScreen : Screen
 {
     private static terminalHelper helper = new terminalHelper();
-    private static bool running = true;
     private readonly Building building;
     private readonly Zone zone;
 
@@ -50,6 +49,7 @@ public class ZoneScreen : Screen
                 // TODO Add device
                 break;
             case 4:
+                running = false;
                 return;
         }
     }
