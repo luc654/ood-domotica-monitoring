@@ -13,8 +13,8 @@ public class SensorScreen : Screen
     protected override List<string> Options => new List<string>()
     {
         "Read Current Value",
-        "View Notifications made by this device",
-        "View specifications of this device",
+        "View Notifications made by this sensor",
+        "View specifications of this sensor",
         $"Return to {zone.Name} overview"
     };
 
