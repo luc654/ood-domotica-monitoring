@@ -37,9 +37,9 @@ public class SensorScreen : Screen
             case 2:
                 viewSpecifications();
                 break;
-            case 3:
-                throw new NotImplementedException();
-                break;
+            case 3:                
+                running = false;
+                return;
         }
     }
 
