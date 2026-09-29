@@ -61,10 +61,10 @@ public class terminalHelper
         setTitle(title);
         setDescription(description);
         
+        setNotification(Program.GlobalContext.notification);
         // Handle eloquent notification model
          if (Program.GlobalContext.notification.Length > 0)
         {
-            setNotification(Program.GlobalContext.notification);
             Program.GlobalContext.notification = "";
         }
     
