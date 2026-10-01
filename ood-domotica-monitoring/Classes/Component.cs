@@ -15,12 +15,7 @@ public enum SensorType
     Temperature
 }
 
-public enum NotificationLevel
-{
-    Info,
-    Warning,
-    Critical
-}
+
 
 // Parent class. no touchy. For future reference, abstract functions are functions that must be implemented in child classes, for this case read is an abstract function.
 public abstract class Component
