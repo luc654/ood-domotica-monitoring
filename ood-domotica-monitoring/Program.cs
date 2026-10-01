@@ -10,29 +10,28 @@ public class Program
 		
 		List<string> options = new List<string>
 		{
-			"Laadt data in",
-			"Seed componenten",
-			"Begin scernario"
+			"Load data",
+			"Fill components",
+			"Start scenario"
 		};
 		terminalHelper helper = new terminalHelper();
 		while (running)
 		{
 			
-		switch (helper.handleTerminal(options, "Mini casus", "Selecteer een optie om de Casus te beginnen"))
+		switch (helper.handleTerminal(options, "Mini casus", "Use arrow keys or 1 - 9 to choose an option, hit enter to select!"))
 		{
 			case 0:
 			{
 				DataLoader.loadData();
-				Program.GlobalContext.notification = "Data ingeladen";
+				Program.GlobalContext.notification = "Data loaded, 1337 engaged";
 				break;
 			}
 			case 1:
 			{
-				// seedComponents throws when there are no zones yet, show that as a notification instead of crashing
 				try
 				{
 					DataLoader.seedComponents();
-					Program.GlobalContext.notification = "Componenten toegevoegd";
+					Program.GlobalContext.notification = "Components hashed (decrypting SHA512)";
 				}
 				catch (InvalidOperationException e)
 				{
