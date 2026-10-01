@@ -46,7 +46,7 @@ public class SensorScreen : Screen
     private void getCurrentValue()
     {
         int value = selectedSensor.Read();
-        Program.GlobalContext.notification = $"Huidige waarde is: {value}";
+        Program.GlobalContext.notification = $"Current Value is: {value}";
     }
 
     private void viewSpecifications()
