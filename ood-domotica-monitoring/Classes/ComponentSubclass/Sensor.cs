@@ -2,13 +2,13 @@ using ood_domotica_monitoring.Classes;
 
 public abstract class Sensor : Component
 
-// Yes i formatted the code and added some bullshit documentation using 'ai', im only a luddite when opposed to a clear moral absolutism like AI 'art'
+// Yes i formatted the code and added some bullshit documentation using 'ai'
 {
     public int LastValue { get; protected set; }
     public bool HasBenchmark { get; protected set; }
     public int BenchmarkMin { get; protected set; }
     public int BenchmarkMax { get; protected set; }
-    
+
     public SensorType SensorType { get; }
 
     protected Sensor(int id, string naam, int zoneId, SensorType sensorType)
@@ -49,7 +49,7 @@ public abstract class Sensor : Component
 
     public void setNotification(DateTime time, NotificationLevel notification, string message, int componentId)
     {
-        throw new NotImplementedException();
+        Program.GlobalContext.notificationHelper.addNotification(time, notification, message, componentId);
     }
     
     
@@ -88,7 +88,7 @@ public abstract class Sensor : Component
         protected override int ReadValue()
         {
             
-                return new Random().Next(0, MaxUsage + 20); // can exceed max on purpose to trigger benchmark warning | wow thanks for the explanation captain obvious   
+                return new Random().Next(0, MaxUsage + 200); 
         }
     }
     
