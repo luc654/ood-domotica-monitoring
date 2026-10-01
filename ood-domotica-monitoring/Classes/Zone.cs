@@ -31,6 +31,7 @@ public class Zone
 
     // in Zone.cs
     public List<Sensor> getSensors() => componentList.OfType<Sensor>().ToList();
+    public List<Device> getDevice() => componentList.OfType<Device>().ToList();
 
     public List<string> getSensorNamesAndID()
     {
@@ -38,6 +39,16 @@ public class Zone
         foreach (var sensor in getSensors())
         {
             returnList.Add($"{sensor.Id} {sensor.Naam}");
+        }
+        return returnList;
+    }
+    
+    public List<string> getDeviceNamesAndID()
+    {
+        List<string> returnList = new List<string>();
+        foreach (var device in getDevice())
+        {
+            returnList.Add($"{device.Id} {device.Naam}");
         }
         return returnList;
     }
