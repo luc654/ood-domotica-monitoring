@@ -23,15 +23,15 @@ public class Program
 			case 0:
 			{
 				DataLoader.loadData();
-				Program.GlobalContext.notification = "Data loaded, 1337 engaged";
+				Program.GlobalContext.notification = "Data loaded";
 				break;
 			}
 			case 1:
 			{
 				try
 				{
-					DataLoader.seedComponents();
-					Program.GlobalContext.notification = "Components hashed (decrypting SHA512)";
+					int amount = DataLoader.seedComponents();
+					Program.GlobalContext.notification = $"{amount} components loaded";
 				}
 				catch (InvalidOperationException e)
 				{
