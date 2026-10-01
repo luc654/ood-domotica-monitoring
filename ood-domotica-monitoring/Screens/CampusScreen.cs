@@ -11,6 +11,14 @@ public class CampusScreen
     // TODO switch to native screen element instead of this clusterfuck
     public static void loop()
     {
+
+        // Check if data has been loaded
+        if (Program.GlobalContext.campus.getBuildings().Count == 0)
+        {
+            Program.GlobalContext.notification = "Load data first silly, i didnt have time to make a whole CRUD system";
+            return;
+        }
+        
         List<string> options = new List<string>
         {
             "Select Building",
@@ -76,9 +84,6 @@ public class CampusScreen
         int notificationAmountAfter = Program.GlobalContext.notificationHelper.getNotificationCount();
         int newNotificationAmount = notificationAmountAfter - notificationAmountBefore;
         
-        Console.WriteLine(notificationAmountBefore);
-        Console.WriteLine(newNotificationAmount);
-        Console.ReadLine();
         Program.GlobalContext.notification = $"{newNotificationAmount.ToString()} notifications added!";
     }
 }
