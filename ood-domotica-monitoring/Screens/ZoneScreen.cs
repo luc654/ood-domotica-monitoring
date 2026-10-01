@@ -1,4 +1,5 @@
 using ood_domotica_monitoring.Classes;
+using ood_domotica_monitoring.Classes.ComponentSubclass;
 
 namespace ood_domotica_monitoring;
 
@@ -40,7 +41,8 @@ public class ZoneScreen : Screen
                 new SensorScreen(zone, sensor).Loop();
                 break;
             case 1:
-                // TODO Select device
+                Device device = selectDevice();
+                new DeviceScreen(zone, device).Loop();
                 break;
             case 2:
                 // TODO Add sennor
@@ -61,9 +63,10 @@ public class ZoneScreen : Screen
         Sensor selectedSensor = zone.getSensors()[selectedSensorIndex];
         return selectedSensor;
     }   
-    private void selectDevice()
+    private Device selectDevice()
     {
-        // int selectedSensorIndex = helper.handleTerminal(building.getZoneNamesAndID(), "Building overview", "Select zone to inspect");
-        throw new NotImplementedException();
+        int selectedDeviceIndex = helper.handleTerminal(zone.getDeviceNamesAndID(), "Zone inspection", "Select device to inspect");
+        Device selectedSensor = zone.getDevice()[selectedDeviceIndex];
+        return selectedSensor;
     }   
 }
