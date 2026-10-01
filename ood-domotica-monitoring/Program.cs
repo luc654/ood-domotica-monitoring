@@ -58,6 +58,7 @@ public class Program
 
 		public static string notification {get; set;} = "";
 		public static Campus campus { get; set; } = new Campus(1, "Main Campus");
+		public static NotificationHelper notificationHelper { get; } = new NotificationHelper();
 	}
 
 }
