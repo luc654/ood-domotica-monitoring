@@ -2,7 +2,7 @@ using ood_domotica_monitoring.Classes;
 
 public abstract class Sensor : Component
 
-// Yes i formatted the code and added some bullshit documentation using 'ai'
+// A sensor is an abstract class because it must be replaced by one of its three subcomponents, since each sensor has a value and benchmark stuff this gets stored in the parent class
 {
     public int LastValue { get; protected set; }
     public bool HasBenchmark { get; protected set; }
@@ -11,8 +11,8 @@ public abstract class Sensor : Component
 
     public SensorType SensorType { get; }
 
-    protected Sensor(int id, string naam, int zoneId, SensorType sensorType)
-        : base(id, HardwareType.Sensor, naam, zoneId)
+    // This constructor also sets important data in the Component class, everything after base( goes to said class
+    protected Sensor(int id, string naam, int zoneId, SensorType sensorType) : base(id, HardwareType.Sensor, naam, zoneId)
     {
         SensorType = sensorType;
         HasBenchmark = false;
@@ -25,26 +25,65 @@ public abstract class Sensor : Component
         HasBenchmark = true;
     }
 
-    // Public Read() wraps the sensor-specific reading logic and
-    // automatically raises a notification if the value falls outside
-    // the configured benchmark range.
+    // IMPORTANT. classifications of notification levels. 
+    
+    // Margin of n*100%, if a reading is within n*100% of its benchmark (e.g. upperlimit = 100 and reading = 95) a notification gets made  
+    protected const double InfoMargin = 0.10;
+    
+    // Same as above, but for if a reading is outside of its benchmark by n*100% (e.g. upperlimit = 100 and reading = 130) a critical gets made. 
+    protected const double CriticalMargin = 0.25;
+    // anything between infomargin and criticalmargin becomes an warning
+
     public override int Read()
     {
         LastValue = ReadValue();
 
-        if (HasBenchmark && (LastValue < BenchmarkMin || LastValue > BenchmarkMax))
+        NotificationLevel? level = getNotificationLevel(LastValue);
+        if (level != null)
         {
-            setNotification(
-                DateTime.Now,
-                NotificationLevel.Warning,
-                $"{Naam} reading {LastValue} is outside benchmark [{BenchmarkMin}-{BenchmarkMax}]",
-                Id);
+            setNotification(DateTime.Now, level.Value, createNotificationMessage(LastValue, level.Value), Id);
         }
 
         return LastValue;
     }
 
-    // Each concrete sensor implements its own actual read logic here.
+
+    protected virtual NotificationLevel? getNotificationLevel(int value)
+    {
+        if (!HasBenchmark)
+        {
+            return null;
+        }
+
+        // Range must be atleast 1 
+        double range = Math.Max(1, BenchmarkMax - BenchmarkMin);
+
+        // not gonna lie this is vibecoded because my chain of if statements was an eyesore. 
+        if (value < BenchmarkMin || value > BenchmarkMax)
+        {
+            int distanceOutside = value < BenchmarkMin ? BenchmarkMin - value : value - BenchmarkMax;
+            return distanceOutside > range * CriticalMargin ? NotificationLevel.Critical : NotificationLevel.Warning;
+        }
+
+        int distanceToLimit = Math.Min(value - BenchmarkMin, BenchmarkMax - value);
+        return distanceToLimit <= range * InfoMargin ? NotificationLevel.Info : null;
+    }
+
+    private string createNotificationMessage(int value, NotificationLevel level)
+    {
+        string benchmark = $"[{BenchmarkMin}-{BenchmarkMax}]";
+        // i love my switchcases short handed and long handed
+        // the switch case is dead, long live the switch case
+        // perhaps i should post this on my linkedin
+        return level switch
+        {
+            NotificationLevel.Info => $"{Naam} reading {value} is close to the limit of {benchmark}",
+            NotificationLevel.Warning => $"{Naam} reading {value} is outside benchmark {benchmark}",
+            _ => $"{Naam} reading {value} is far outside benchmark {benchmark}",
+        };
+    }
+
+    // abstract because each subcomponent MUST replace it with its own function and logic
     protected abstract int ReadValue();
 
     public void setNotification(DateTime time, NotificationLevel notification, string message, int componentId)
@@ -59,7 +98,7 @@ public abstract class Sensor : Component
     
     
     /// <summary>
-    /// All sensors, ye i know that this summary is for movement sensor dont look so deep into it
+    /// All sensors types and logic
     /// </summary>
     public class MovementSensor : Sensor
     {
@@ -89,6 +128,17 @@ public abstract class Sensor : Component
         {
             
                 return new Random().Next(0, MaxUsage + 200); 
+        }
+
+        // Using little energy is never a problem, so only the upper limit counts for energy sensors. we at brutus manufactory care for energy
+        protected override NotificationLevel? getNotificationLevel(int value)
+        {
+            if (value < BenchmarkMax * (1 - InfoMargin))
+            {
+                return null;
+            }
+
+            return base.getNotificationLevel(value);
         }
     }
     
