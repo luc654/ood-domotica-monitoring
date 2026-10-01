@@ -25,14 +25,12 @@ public class NotificationHelper
 
     public int getNotificationCount()
     {
-        Console.WriteLine(_notifications.Count);
         return _notifications.Count;
     }
 
     public void addNotification(DateTime time, NotificationLevel notification, string message, int componentId)
     {
         currId++;
-        Console.WriteLine("New notification added:");
         // since notifications dont use user generated values, we dont need to validate them.
         Notification newNotification = new Notification(time, notification, message, componentId, currId);
         _notifications.Add(newNotification);
