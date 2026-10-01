@@ -29,7 +29,6 @@ public class Zone
         return componentList;
     }
 
-    // in Zone.cs
     public List<Sensor> getSensors() => componentList.OfType<Sensor>().ToList();
     public List<Device> getDevice() => componentList.OfType<Device>().ToList();
 
@@ -53,4 +52,11 @@ public class Zone
         return returnList;
     }
 
+    public void readAllComponents()
+    {
+        foreach (var component in componentList)
+        {
+            component.Read();
+        }
+    }
 }
