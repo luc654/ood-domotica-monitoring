@@ -101,7 +101,7 @@ public class DataLoader
     /// Adds about 20 random sensors and devices to every zone of the campus in GlobalContext.
     /// Throws an InvalidOperationException when the campus has no zones yet, so run loadData() first.
     /// </summary>
-    public static void seedComponents()
+    public static int seedComponents()
     {
         Campus campus = Program.GlobalContext.campus;
         if (campus == null)
@@ -112,7 +112,7 @@ public class DataLoader
         List<Zone> zones = campus.getBuildings().SelectMany(building => building.getZones()).ToList();
         if (zones.Count == 0)
         {
-            throw new InvalidOperationException("The campus has no zones yet, load the data first.");
+            throw new InvalidOperationException("Load data first silly");
         }
 
         // continue after the highest existing id, so seeding twice never gives duplicate ids
@@ -121,7 +121,7 @@ public class DataLoader
             .Select(component => component.Id)
             .DefaultIfEmpty(0)
             .Max() + 1;
-
+        int componentsAdded = 0;
         foreach (Zone zone in zones)
         {
             // counts how often a name is used in this zone, so we get "Desk lamp 1", "Desk lamp 2" etc.
@@ -130,6 +130,7 @@ public class DataLoader
 
             for (int i = 0; i < amountOfComponents; i++)
             {
+                componentsAdded++;
                 bool isSensor = random.Next(0, 2) == 1;
                 Component component = isSensor
                     ? createRandomSensor(nextId, zone.Id, nameCounter)
@@ -139,6 +140,8 @@ public class DataLoader
                 nextId++;
             }
         }
+
+        return componentsAdded;
     }
 
     private static Sensor createRandomSensor(int id, int zoneId, Dictionary<string, int> nameCounter)
