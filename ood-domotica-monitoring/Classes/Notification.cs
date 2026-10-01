@@ -16,11 +16,11 @@ public class Notification
     public int componentId { get; }
     public NotificationLevel notificationLevel { get; }
 
-    public Notification(DateTime time, NotificationLevel notification, string message, int componentId, int id)
+    public Notification(DateTime time, NotificationLevel level, string message, int componentId, int id)
     {
         this.datetime = time;
         this.message = message;
-        this.notificationLevel = notificationLevel;
+        this.notificationLevel = level;
         this.componentId = componentId;
         this.id = id;
     }
@@ -32,12 +32,11 @@ public class Notification
     public string getPrintableData()
     {
         string specifications = $"""
-                                    ID: {id}
+                                    Notification ID: {id}
                                     Level: {notificationLevel}
                                     Message: {message}
                                     -----------------
                                     Component ID:  {componentId}
-                                    Component name: NOTYETIMPLEMENT
                                  """;
         return specifications;
     }
