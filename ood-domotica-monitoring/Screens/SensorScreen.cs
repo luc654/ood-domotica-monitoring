@@ -52,10 +52,10 @@ public class SensorScreen : Screen
     private void viewSpecifications()
     {
         string specifications = $"""
-                                    Naam: {selectedSensor.Naam}
-                                    Laatste waarde: {selectedSensor.LastValue}
-                                    Min - Max waardes: {selectedSensor.BenchmarkMin} - {selectedSensor.BenchmarkMax}
-                                    Sensor soort: {selectedSensor.SensorType}
+                                    Name: {selectedSensor.Naam}
+                                    Last value: {selectedSensor.LastValue}
+                                    Min - Max values: {selectedSensor.BenchmarkMin} - {selectedSensor.BenchmarkMax}
+                                    Sensor type: {selectedSensor.SensorType}
                                     ID: {selectedSensor.Id}
                                     Zone ID:  {selectedSensor.ZoneId}
                                  """;
