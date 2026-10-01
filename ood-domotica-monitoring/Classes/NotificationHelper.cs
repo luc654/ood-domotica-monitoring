@@ -31,7 +31,6 @@ public class NotificationHelper
     public void addNotification(DateTime time, NotificationLevel notification, string message, int componentId)
     {
         currId++;
-        // since notifications dont use user generated values, we dont need to validate them.
         Notification newNotification = new Notification(time, notification, message, componentId, currId);
         _notifications.Add(newNotification);
     }
