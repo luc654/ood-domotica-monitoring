@@ -37,6 +37,7 @@ public class Notification
                                     Message: {message}
                                     -----------------
                                     Component ID:  {componentId}
+                                    Time: {datetime.Hour}:{datetime.Minute}:{datetime.Second}
                                  """;
         return specifications;
     }
