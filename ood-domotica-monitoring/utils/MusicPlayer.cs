@@ -47,7 +47,7 @@ public class MusicPlayer
             string fullPath = soundFiles[numberIndex]; 
             
             wmp.URL = fullPath;
-
+            wmp.settings.setMode("loop", true); 
 
             return;
         }
