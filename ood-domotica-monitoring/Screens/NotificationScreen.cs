@@ -5,6 +5,8 @@ namespace ood_domotica_monitoring;
 public class NotificationScreen : Screen
 {
     protected override string Title => "View notifications";
+    protected override string Description => $"{Program.GlobalContext.notificationHelper.getNotificationCount()} notifications detected.";
+
     protected override List<string> Options => new List<string>
     {
         "View recent notifications",
