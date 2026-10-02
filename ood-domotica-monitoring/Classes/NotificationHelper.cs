@@ -66,4 +66,21 @@ public class NotificationHelper
 
         return returnList;
     }
+
+    public List<string> getNotificationListStringByQuery(string query)
+    {
+        List<string> returnlist = new List<string>();
+
+        foreach (Notification notification in _notifications)
+        {
+            if (notification.message.ToUpper().Contains(query.ToUpper()))
+            {
+                returnlist.Add($"{notification.id} | {notification.datetime.DayOfWeek} {notification.datetime.Hour}:{notification.datetime.Minute}:{notification.datetime.Second} | {notification.notificationLevel} | {notification.message}");
+
+            }
+        }
+
+        Console.ReadLine();
+        return returnlist;
+    }
 }
