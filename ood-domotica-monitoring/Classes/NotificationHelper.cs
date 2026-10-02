@@ -80,7 +80,6 @@ public class NotificationHelper
             }
         }
 
-        Console.ReadLine();
         return returnlist;
     }
 }
