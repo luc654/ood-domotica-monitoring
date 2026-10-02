@@ -99,17 +99,23 @@ public class CampusScreen
         int total = 0;
         foreach (var building in Program.GlobalContext.campus.getBuildings())
         {
+            int buildingTotal = 0;
+            int index = 0;
+            
             sb.AppendLine($"Building: {building.Name}");
-
             foreach (var zone in building.getZones())
             {
                 int zonevalue = zone.returnSpecificSensortypesValue(selectedSensor);
                 sb.AppendLine($"    Zone {zone.Name}: {zonevalue}");
                 total += zonevalue;
+                buildingTotal += zonevalue;
+                index++;
             }
+            sb.AppendLine($"Total: {buildingTotal} | Average: {(int)Math.Ceiling((double)buildingTotal / index)}");
             sb.AppendLine("");
+            
         }
-        sb.AppendLine($"Total value of {selectedSensor} across all buildings: {total}");
+        sb.AppendLine($"Total value of {selectedSensor} across all buildings: {total} | Average across all buildings: {(int)Math.Ceiling((double)total / Program.GlobalContext.campus.getBuildings().Count)}");
         List<string> returnButton = new List<string>() { "terug" };
 
         helper.handleTerminal(returnButton, $"{selectedSensor} usage across all buildings.", sb.ToString());
