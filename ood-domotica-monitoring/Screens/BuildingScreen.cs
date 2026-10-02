@@ -34,6 +34,9 @@ public class BuildingScreen : Screen
     }
 
     private int SelectZone()
-        => helper.handleTerminal(building.getZoneNamesAndID(), "Building overview", "Select zone to inspect");
+    {
+        int selectedIndex = helper.handleTerminal(building.getZoneNamesAndID(), "Building overview", "Select zone to inspect");
+        return building.getZones()[selectedIndex].Id;
+    }
 
 }
