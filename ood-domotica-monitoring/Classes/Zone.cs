@@ -59,4 +59,18 @@ public class Zone
             component.Read();
         }
     }
+
+    public int returnSpecificSensortypesValue(SensorType sensorType)
+    {
+        int totalZoneValue = 0;
+        foreach (var sensor in getSensors())
+        {
+            if (sensor.SensorType == sensorType)
+            {
+                totalZoneValue += sensor.LastValue;
+            }
+        }
+
+        return totalZoneValue;
+    }
 }
