@@ -6,6 +6,7 @@ namespace ood_domotica_monitoring;
 
 
 // hello guys i got very good at probramming and writing commantds. 
+// This file was mainly generated yes, i am no coward in admitting this, i am also not a coward in hiding my AI usage, only this file, and any other file in which i specifically mention AI usage, have been generated.
 public class DataLoader
 {
     // one shared Random, creating a new Random() for every call can give the same values when called quickly after each other
