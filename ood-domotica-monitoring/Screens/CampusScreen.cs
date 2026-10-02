@@ -1,4 +1,5 @@
 using System.Runtime.CompilerServices;
+using System.Text;
 using ood_domotica_monitoring.Classes;
 
 namespace ood_domotica_monitoring;
@@ -9,6 +10,7 @@ public class CampusScreen
 	private static terminalHelper helper = new terminalHelper();
 
     // TODO switch to native screen element instead of this clusterfuck
+    // Note, i might not have time to do this because its a confusing mess but just know that all the other screens do use the OOP screen class so just take inspiration from that
     public static void loop()
     {
 
@@ -42,7 +44,7 @@ public class CampusScreen
                 }
                 case 1:
                 {
-                    CampusScreen.loop();
+                    calculateAverage();
                     break;
                 }
                 case 2:
@@ -85,5 +87,33 @@ public class CampusScreen
         int newNotificationAmount = notificationAmountAfter - notificationAmountBefore;
         
         Program.GlobalContext.notification = $"{newNotificationAmount.ToString()} notifications added!";
+    }
+
+    private static void calculateAverage()
+    {
+        
+        int specificCalculateIndex = helper.handleTerminal(Enum.GetNames(typeof(SensorType)).ToList(), "Campus overview", "Select specific sensor type to inspect across all buildings");
+        SensorType selectedSensor = (SensorType)specificCalculateIndex;
+
+        StringBuilder sb = new StringBuilder();
+        int total = 0;
+        foreach (var building in Program.GlobalContext.campus.getBuildings())
+        {
+            sb.AppendLine($"Building: {building.Name}");
+
+            foreach (var zone in building.getZones())
+            {
+                int zonevalue = zone.returnSpecificSensortypesValue(selectedSensor);
+                sb.AppendLine($"    Zone {zone.Name}: {zonevalue}");
+                total += zonevalue;
+            }
+            sb.AppendLine("");
+        }
+        sb.AppendLine($"Total value of {selectedSensor} across all buildings: {total}");
+        List<string> returnButton = new List<string>() { "terug" };
+
+        helper.handleTerminal(returnButton, $"{selectedSensor} usage across all buildings.", sb.ToString());
+
+        
     }
 }
