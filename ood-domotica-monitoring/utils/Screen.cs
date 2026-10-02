@@ -7,15 +7,15 @@ public abstract class Screen
 
     protected abstract string Title { get; }
     protected abstract List<string> Options { get; }
-    
-    protected virtual string Description { get; set; }
+
+    protected virtual string Description { get; set; } = "Select an option";
     protected abstract void HandleOption(int selected);
 
     public void Loop()
     {
         while (running)
         {
-            if (Description.Length == 0) { Description = "a"; };
+            if (Description.Length == 0) { Description = "Select an option"; };
 
             int selected = helper.handleTerminal(Options, Title, Description);
             HandleOption(selected);
