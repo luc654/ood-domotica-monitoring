@@ -25,6 +25,7 @@ public class NotificationScreen : Screen
                 advancedViewNotification();
                 break;
             case 2:
+                searchForNotifications();
                 break;
             case 3:
                 running = false;
@@ -84,5 +85,23 @@ public class NotificationScreen : Screen
         Notification selectedNotification = notificationHelper.getNotificationByString(notifications[selectedIndex]);
         showFormattedString(selectedNotification.getPrintableData());
 
+    }
+
+    private void searchForNotifications()
+    {
+        NotificationHelper notificationHelper = Program.GlobalContext.notificationHelper;
+        string query = helper.handleQuestion("Type query for filtering notifications");
+        List<string> notifications = notificationHelper.getNotificationListStringByQuery(query);
+        
+        // Check if notifications exist
+        if (notifications.Count == 0)
+        {
+            Program.GlobalContext.notification = $"No notifications with query '{query}'. Try something else";
+            return;
+        }
+        int selectedIndex = helper.handleTerminal(notifications, "",
+            "Select notification");
+        Notification selectedNotification = notificationHelper.getNotificationByString(notifications[selectedIndex]);
+        showFormattedString(selectedNotification.getPrintableData());
     }
 }
