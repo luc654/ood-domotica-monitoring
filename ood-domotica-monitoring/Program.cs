@@ -12,7 +12,8 @@ public class Program
 		{
 			"Load data",
 			"Fill components",
-			"Start scenario"
+			"Start scenario",
+			"Play music (windows only)"
 		};
 		terminalHelper helper = new terminalHelper();
 		while (running)
@@ -42,6 +43,12 @@ public class Program
 			case 2:
 			{
 				CampusScreen.loop();
+				break;
+			}
+			case 3:
+			{
+				MusicPlayer musicPlayer = new MusicPlayer();
+				musicPlayer.playSounds();
 				break;
 			}
 		}
