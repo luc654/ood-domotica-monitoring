@@ -49,9 +49,9 @@ public class ZoneScreen : Screen
     }
 
 
-    private Sensor selectSensor()
+    private Sensor selectSensor(string description="Select sensor to inspect")
     {
-        int selectedSensorIndex = helper.handleTerminal(zone.getSensorNamesAndID(), "Zone inspection", "Select sensor to inspect");
+        int selectedSensorIndex = helper.handleTerminal(zone.getSensorNamesAndID(), "Zone inspection", description);
         Sensor selectedSensor = zone.getSensors()[selectedSensorIndex];
         return selectedSensor;
     }   
@@ -60,5 +60,6 @@ public class ZoneScreen : Screen
         int selectedDeviceIndex = helper.handleTerminal(zone.getDeviceNamesAndID(), "Zone inspection", "Select device to inspect");
         Device selectedSensor = zone.getDevice()[selectedDeviceIndex];
         return selectedSensor;
-    }   
+    }
+    
 }
