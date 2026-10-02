@@ -32,7 +32,7 @@ public class SensorScreen : Screen
                 getCurrentValue();
                 break;
             case 1:
-                throw new NotImplementedException();
+                inspectMadeNotifications();
                 break;
             case 2:
                 viewSpecifications();
@@ -61,5 +61,11 @@ public class SensorScreen : Screen
                                  """;
         showFormattedString(specifications);
 
+    }
+    
+    private void inspectMadeNotifications()
+    {
+        NotificationHelper notificationHelper = Program.GlobalContext.notificationHelper;
+        showFormattedString(notificationHelper.getNotificationStringByComponentId(selectedSensor.Id));
     }
 }
