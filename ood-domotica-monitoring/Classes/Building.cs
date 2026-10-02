@@ -33,7 +33,6 @@ public class Building
         if (selectedZone == null)
         {
             // default to the first zone if no zone is found
-            Program.GlobalContext.notification = "Zone not found";
             selectedZone = zoneList.First();
         }
         return selectedZone;
