@@ -1,3 +1,5 @@
+using System.Text;
+
 namespace ood_domotica_monitoring.Classes;
 public class NotificationHelper
 {
@@ -81,5 +83,18 @@ public class NotificationHelper
         }
 
         return returnlist;
+    }
+
+    public string getNotificationStringByComponentId(int id)
+    {
+        List<Notification> notificationWithMatchingComponentIdList = _notifications.Where(o => o.componentId == id).ToList();
+        StringBuilder sb = new StringBuilder();
+        foreach (var notification in notificationWithMatchingComponentIdList)
+        {
+            sb.AppendLine(
+                ($"{notification.id} | {notification.datetime.DayOfWeek} {notification.datetime.Hour}:{notification.datetime.Minute}:{notification.datetime.Second} | {notification.notificationLevel} | {notification.message}"));
+        }
+
+        return sb.ToString();
     }
 }
