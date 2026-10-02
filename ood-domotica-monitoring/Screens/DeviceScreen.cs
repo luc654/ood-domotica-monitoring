@@ -33,12 +33,9 @@ public class DeviceScreen : Screen
                 getCurrentValue();
                 break;
             case 1:
-                throw new NotImplementedException();
-                break;
-            case 2:
                 viewSpecifications();
                 break;
-            case 3:                
+            case 2:                
                 running = false;
                 return;
         }
@@ -62,4 +59,5 @@ public class DeviceScreen : Screen
         
 
     }
+    
 }
