@@ -22,9 +22,9 @@ public class NotificationScreen : Screen
                 selectNotification();
                 break;
             case 1:
+                advancedViewNotification();
                 break;
             case 2:
-                // TODO Add sennor
                 break;
             case 3:
                 running = false;
@@ -37,7 +37,7 @@ public class NotificationScreen : Screen
     {
         NotificationHelper notificationHelper = Program.GlobalContext.notificationHelper;
 
-        // nothing to select yet, show a message instead of crashing on an empty list
+        // nothing to select yet
         if (notificationHelper.getNotificationCount() == 0)
         {
             Program.GlobalContext.notification = "No notifications yet";
@@ -47,6 +47,41 @@ public class NotificationScreen : Screen
         int selectedIndex = helper.handleTerminal(notificationHelper.getAllNotificationsAsString(), Title,
             "Select notification");
         Notification selectedNotification = notificationHelper.getNotificationByListID(selectedIndex);
+        showFormattedString(selectedNotification.getPrintableData());
+
+    }
+
+
+    private void advancedViewNotification()
+    {
+        NotificationHelper notificationHelper = Program.GlobalContext.notificationHelper;
+
+        // nothing to select yet
+        if (notificationHelper.getNotificationCount() == 0)
+        {
+            Program.GlobalContext.notification = "No notifications yet";
+            return;
+        }
+
+        // Prompt user for specific notification level
+        int selectedNotificationStateIndex = helper.handleTerminal(
+            notificationHelper.getNotificationLevelAsStringList(), "Advanced notification viewer",
+            "Select a notification level to view");
+        NotificationLevel selectedNotificationState = (NotificationLevel) selectedNotificationStateIndex;
+
+        List<string> notifications = notificationHelper.getNotificationsByLevel(selectedNotificationState);
+        
+        
+        // Check if notifications exist
+        if (notifications.Count == 0)
+        {
+            Program.GlobalContext.notification = "No notifications yet";
+            return;
+        }
+        
+        int selectedIndex = helper.handleTerminal(notifications, "",
+            "Select notification");
+        Notification selectedNotification = notificationHelper.getNotificationByString(notifications[selectedIndex]);
         showFormattedString(selectedNotification.getPrintableData());
 
     }
