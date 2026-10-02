@@ -137,7 +137,7 @@ public class terminalHelper
 
             if (!canEmpty && string.IsNullOrEmpty(answer))
             {
-                Program.GlobalContext.notification = "Antwoord kan niet leeg zijn";
+                Program.GlobalContext.notification = "Answer cant be nothing";
             }
 
         } while (!canEmpty && string.IsNullOrEmpty(answer));
