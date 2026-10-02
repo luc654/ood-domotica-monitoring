@@ -6,18 +6,11 @@ public class NotificationHelper
 
     public List<string> getAllNotificationsAsString()
     {
-        List<string> returnList = new List<string>();
-        // newest first, so walk backwards through the list (down to and including index 0)
-        for (int i = _notifications.Count - 1; i >= 0; i--)
-        {
-            Notification notification = _notifications[i];
-            returnList.Add($"{notification.datetime.DayOfWeek} {notification.datetime.Hour}:{notification.datetime.Minute}:{notification.datetime.Second} | {notification.notificationLevel} | {notification.message}");
-        }
 
-        return returnList;
+        return notificationListToStringList(_notifications);
     }
 
-    // id is the position in getAllNotificationsAsString(), which is newest first, so flip it back
+    // id is the position in getAllNotificationsAsString(), which is newest first, so flip it bakc using - 1 - id
     public Notification getNotificationByListID(int id)
     {
         return _notifications[_notifications.Count - 1 - id];
@@ -33,5 +26,44 @@ public class NotificationHelper
         currId++;
         Notification newNotification = new Notification(time, notification, message, componentId, currId);
         _notifications.Add(newNotification);
+    }
+    
+    public List<string> getNotificationLevelAsStringList()
+    {
+        List<string> values = Enum.GetNames(typeof(NotificationLevel)).ToList();
+        return values;
+    }
+
+    public List<string> getNotificationsByLevel(NotificationLevel level)
+    {
+        List<Notification> notificationsWithSpecifiedLevel = _notifications.Where(o => o.notificationLevel == level).ToList();
+        
+        return notificationListToStringList(notificationsWithSpecifiedLevel);
+    }
+
+    public Notification getNotificationById(int id)
+    {
+        return _notifications.First(o => o.id == id);
+    }
+
+    public Notification getNotificationByString(string rawValue)
+    {
+        string[] tokens = rawValue.Split(new[] { " |" }, StringSplitOptions.None);
+        int notificationId =  Int32.Parse(tokens[0]);
+        return getNotificationById(notificationId);
+
+    }
+
+    private List<string> notificationListToStringList(List<Notification> notificationsList)
+    {
+        List<string> returnList = new List<string>();
+        
+        for (int i = notificationsList.Count - 1; i >= 0; i--)
+        {
+            Notification notification = notificationsList[i];
+            returnList.Add($"{notification.id} | {notification.datetime.DayOfWeek} {notification.datetime.Hour}:{notification.datetime.Minute}:{notification.datetime.Second} | {notification.notificationLevel} | {notification.message}");
+        }
+
+        return returnList;
     }
 }

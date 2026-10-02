@@ -6,19 +6,12 @@
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
-  <component name="CMakeProjectFlavorService">
-    <option name="flavorId" value="CMakePlainProjectFlavor" />
-  </component>
-  <component name="CMakeSettings">
-    <configurations />
-  </component>
   <component name="ChangeListManager">
     <list default="true" id="6d0cafad-331f-432f-9232-d7732b94419a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/ood-domotica-monitoring/utils/Screen.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ood-domotica-monitoring/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ood-domotica-monitoring/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ood-domotica-monitoring/Screens/BuildingScreen.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ood-domotica-monitoring/Screens/BuildingScreen.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ood-domotica-monitoring/Screens/CampusScreen.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ood-domotica-monitoring/Screens/CampusScreen.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ood-domotica-monitoring/Screens/ZoneScreen.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ood-domotica-monitoring/Screens/ZoneScreen.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ood-domotica-monitoring/Classes/Notification.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ood-domotica-monitoring/Classes/Notification.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ood-domotica-monitoring/Classes/NotificationHelper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ood-domotica-monitoring/Classes/NotificationHelper.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ood-domotica-monitoring/Screens/NotificationScreen.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ood-domotica-monitoring/Screens/NotificationScreen.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,92 +32,22 @@
 }</component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/luc654/ood-domotica-monitoring&quot;,
-    &quot;accountId&quot;: &quot;26de1ff6-ea86-4e34-8059-b40d540e7401&quot;
+    &quot;url&quot;: &quot;https://github.com/luc654/ood-domotica-monitoring.git&quot;,
+    &quot;accountId&quot;: &quot;87221ca2-2623-4eee-9e93-3812d3eb589a&quot;
   }
 }</component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5a6236cfdac448ffada1671fabc4404ef49908/ec/44f93a18/InvalidOperationException.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ood-domotica-monitoring/Classes/Building.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ood-domotica-monitoring/Classes/Campus.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/ood-domotica-monitoring/Classes/Component.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/ood-domotica-monitoring/Classes/ComponentSubclass/Device.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ood-domotica-monitoring/Classes/Notification.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ood-domotica-monitoring/Classes/NotificationHelper.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ood-domotica-monitoring/Classes/Zone.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/ood-domotica-monitoring/Screens/BuildingScreen.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ood-domotica-monitoring/Screens/CampusScreen.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/ood-domotica-monitoring/Screens/ZoneScreen.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ood-domotica-monitoring/Screens/NotificationScreen.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ood-domotica-monitoring/utils/DataLoader.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/ood-domotica-monitoring/utils/Screen.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock:///home/lucas/RiderProjects/ood-domotica-monitoring/ood-domotica-monitoring/Screens/BuildingScreen.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///home/lucas/RiderProjects/ood-domotica-monitoring/ood-domotica-monitoring/Screens/CampusScreen.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///home/lucas/RiderProjects/ood-domotica-monitoring/ood-domotica-monitoring/Screens/ZoneScreen.cs" root0="SKIP_HIGHLIGHTING" />
-  </component>
-  <component name="McpProjectServerCommands">
-    <commands />
-    <urls />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
-  <component name="NextEditCompletionFeaturesState">
-    <decayedCancelled>
-      <entry key="MS100" value="1.0" />
-      <entry key="MS500" value="1.0" />
-      <entry key="S2" value="1.0" />
-      <entry key="S5" value="1.0" />
-      <entry key="S10" value="1.0000000000018774" />
-      <entry key="S30" value="1.0002332070989528" />
-      <entry key="S60" value="1.041155886570359" />
-      <entry key="M2" value="1.857650155369579" />
-      <entry key="M5" value="9.802371575847008" />
-      <entry key="M10" value="24.51556069683275" />
-      <entry key="M15" value="37.977616025841776" />
-      <entry key="M30" value="77.8300670332471" />
-      <entry key="H1" value="145.6035261957077" />
-      <entry key="H2" value="227.40135057858356" />
-      <entry key="H4" value="297.4960588044539" />
-      <entry key="D1" value="382.15516524367735" />
-      <entry key="W1" value="399.9289001465828" />
-    </decayedCancelled>
-    <decayedSelected>
-      <entry key="MS100" value="0.0" />
-      <entry key="MS500" value="8.561091013517218E-281" />
-      <entry key="S2" value="9.641232003350445E-71" />
-      <entry key="S5" value="1.0713571172064531E-28" />
-      <entry key="S10" value="1.2869817378408334E-14" />
-      <entry key="S30" value="3.8458168275602955E-5" />
-      <entry key="S60" value="0.012494614041029434" />
-      <entry key="M2" value="0.3472641734581053" />
-      <entry key="M5" value="3.5794259224408016" />
-      <entry key="M10" value="8.757160289184101" />
-      <entry key="M15" value="12.535545584379115" />
-      <entry key="M30" value="20.320839627000765" />
-      <entry key="H1" value="30.314499826366124" />
-      <entry key="H2" value="41.59088712398979" />
-      <entry key="H4" value="51.261080688104435" />
-      <entry key="D1" value="63.069665566354026" />
-      <entry key="W1" value="65.56772145057914" />
-    </decayedSelected>
-    <decayedShown>
-      <entry key="MS100" value="0.9726549474122855" />
-      <entry key="MS500" value="0.9944701686732144" />
-      <entry key="S2" value="0.9986146661010289" />
-      <entry key="S5" value="0.9994456359721023" />
-      <entry key="S10" value="0.9997227795622541" />
-      <entry key="S30" value="1.0001746210913494" />
-      <entry key="S60" value="1.0531694765980182" />
-      <entry key="M2" value="2.2003943756653936" />
-      <entry key="M5" value="13.364384653687319" />
-      <entry key="M10" value="33.25131125530427" />
-      <entry key="M15" value="50.492808383946034" />
-      <entry key="M30" value="98.13419919594983" />
-      <entry key="H1" value="175.90443553300898" />
-      <entry key="H2" value="268.98177247264084" />
-      <entry key="H4" value="348.7501443781526" />
-      <entry key="D1" value="445.2232820038211" />
-      <entry key="W1" value="465.4963884062669" />
-    </decayedShown>
-  </component>
-  <component name="ProblemsViewState">
-    <option name="selectedTabId" value="CurrentFile" />
-  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
 }</component>
@@ -139,31 +62,18 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;.NET Project.ood-domotica-monitoring.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
-    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.completion.inline&quot;,
-    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.inline.completion&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
-  },
-  &quot;keyToStringList&quot;: {
-    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
-      &quot;GitIgnore&quot;
-    ]
   }
 }</component>
   <component name="RunManager">
@@ -196,7 +106,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1789733424069</updated>
-      <workItem from="1789733424897" duration="4052000" />
+      <workItem from="1789733424897" duration="6319000" />
+      <workItem from="1790618549406" duration="6865000" />
+      <workItem from="1790703603453" duration="3610000" />
+      <workItem from="1790847354638" duration="5723000" />
+      <workItem from="1790887374870" duration="4180000" />
+      <workItem from="1790929929757" duration="2315000" />
     </task>
     <task id="LOCAL-00001" summary="init: initial commit">
       <option name="closed" value="true" />
@@ -222,7 +137,287 @@
       <option name="project" value="LOCAL" />
       <updated>1789733907577</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Init: Classess">
+      <option name="closed" value="true" />
+      <created>1789737788613</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1789737788613</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Init: dataloader util">
+      <option name="closed" value="true" />
+      <created>1789737802367</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1789737802367</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Init: campus screen">
+      <option name="closed" value="true" />
+      <created>1789737812851</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1789737812851</updated>
+    </task>
+    <task id="LOCAL-00007" summary="init: main loop">
+      <option name="closed" value="true" />
+      <created>1789737822534</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1789737822534</updated>
+    </task>
+    <task id="LOCAL-00008" summary="upd: file directory">
+      <option name="closed" value="true" />
+      <created>1789737839619</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1789737839619</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Fix: Zone back button not reverting to building overview">
+      <option name="closed" value="true" />
+      <created>1790619041303</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1790619041303</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Feat: suspiciously optimized component seeder">
+      <option name="closed" value="true" />
+      <created>1790632649045</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1790632649045</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Feat: option to seed components in settings">
+      <option name="closed" value="true" />
+      <created>1790632664569</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1790632664569</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Feat: function to show formatted strings">
+      <option name="closed" value="true" />
+      <created>1790632680610</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1790632680610</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Doc: some humorous documentation">
+      <option name="closed" value="true" />
+      <created>1790632705234</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1790632705234</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Init: Basic functions for SensorScreen.cs">
+      <option name="closed" value="true" />
+      <created>1790632722205</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1790632722205</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Feat: implemented selectsensor()">
+      <option name="closed" value="true" />
+      <created>1790632738458</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1790632738458</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Feat: extra CRUD functionality">
+      <option name="closed" value="true" />
+      <created>1790632754494</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1790632754494</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Fix: back button not working">
+      <option name="closed" value="true" />
+      <created>1790704529864</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1790704529864</updated>
+    </task>
+    <task id="LOCAL-00018" summary="upd: notification not being deleted upon setting globalvar">
+      <option name="closed" value="true" />
+      <created>1790704554030</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1790704554030</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Fix: spelling mistake mentioning sensor as device">
+      <option name="closed" value="true" />
+      <created>1790704822581</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1790704822581</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Translation">
+      <option name="closed" value="true" />
+      <created>1790847446474</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1790847446474</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Translation">
+      <option name="closed" value="true" />
+      <created>1790847500988</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1790847500988</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Init: Device Screen basic functions">
+      <option name="closed" value="true" />
+      <created>1790847513662</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1790847513662</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Feat: helper function for devicescreen">
+      <option name="closed" value="true" />
+      <created>1790847536792</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1790847536792</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Feat: select device function">
+      <option name="closed" value="true" />
+      <created>1790847561891</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1790847561891</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Feat: notificationviewer button">
+      <option name="closed" value="true" />
+      <created>1790888077747</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1790888077747</updated>
+    </task>
+    <task id="LOCAL-00026" summary="rm: notificationlevel enum">
+      <option name="closed" value="true" />
+      <created>1790888089931</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1790888089931</updated>
+    </task>
+    <task id="LOCAL-00027" summary="init: notification handler stuff">
+      <option name="closed" value="true" />
+      <created>1790888105447</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1790888105447</updated>
+    </task>
+    <task id="LOCAL-00028" summary="rm: debug statements">
+      <option name="closed" value="true" />
+      <created>1790888167389</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1790888167389</updated>
+    </task>
+    <task id="LOCAL-00029" summary="rm: unneeded documentation">
+      <option name="closed" value="true" />
+      <created>1790888212726</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1790888212726</updated>
+    </task>
+    <task id="LOCAL-00030" summary="Feat: global notificationhelper">
+      <option name="closed" value="true" />
+      <created>1790888253994</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1790888253994</updated>
+    </task>
+    <task id="LOCAL-00031" summary="Feat: automatically make notification if benchmark fails">
+      <option name="closed" value="true" />
+      <created>1790888270973</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1790888270973</updated>
+    </task>
+    <task id="LOCAL-00032" summary="Feat: readAllComponents function">
+      <option name="closed" value="true" />
+      <created>1790888281731</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1790888281731</updated>
+    </task>
+    <task id="LOCAL-00033" summary="language">
+      <option name="closed" value="true" />
+      <created>1790888545997</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1790888545997</updated>
+    </task>
+    <task id="LOCAL-00034" summary="Feat: snarky remark if user does dumb things">
+      <option name="closed" value="true" />
+      <created>1790890572240</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1790890572240</updated>
+    </task>
+    <task id="LOCAL-00035" summary="feat: snarky remark for dumb user">
+      <option name="closed" value="true" />
+      <created>1790890584639</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1790890584639</updated>
+    </task>
+    <task id="LOCAL-00036" summary="Feat: notification level implementation">
+      <option name="closed" value="true" />
+      <created>1790890603628</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1790890603628</updated>
+    </task>
+    <task id="LOCAL-00037" summary="Feat: show the amount of components loaded in">
+      <option name="closed" value="true" />
+      <created>1790890616344</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1790890616344</updated>
+    </task>
+    <task id="LOCAL-00038" summary="Feat: marginal  notification level system">
+      <option name="closed" value="true" />
+      <created>1790890642315</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1790890642315</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -232,15 +427,32 @@
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="init: initial commit" />
-    <MESSAGE value="Feat: CLI package" />
-    <MESSAGE value="Feat: function for displaying all zones" />
-    <MESSAGE value="init: screens" />
-    <MESSAGE value="Feat: data loaded notification" />
-    <MESSAGE value="init: component Device sensor classes" />
-    <MESSAGE value="forgot to add to .gitignore" />
-    <MESSAGE value="Fixed: 0 to 1 based index conversion" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed: 0 to 1 based index conversion" />
+    <MESSAGE value="Doc: some humorous documentation" />
+    <MESSAGE value="Init: Basic functions for SensorScreen.cs" />
+    <MESSAGE value="Feat: implemented selectsensor()" />
+    <MESSAGE value="Feat: extra CRUD functionality" />
+    <MESSAGE value="Fix: back button not working" />
+    <MESSAGE value="upd: notification not being deleted upon setting globalvar" />
+    <MESSAGE value="Fix: spelling mistake mentioning sensor as device" />
+    <MESSAGE value="Translation" />
+    <MESSAGE value="Init: Device Screen basic functions" />
+    <MESSAGE value="Feat: helper function for devicescreen" />
+    <MESSAGE value="Feat: select device function" />
+    <MESSAGE value="Feat: notificationviewer button" />
+    <MESSAGE value="rm: notificationlevel enum" />
+    <MESSAGE value="init: notification handler stuff" />
+    <MESSAGE value="rm: debug statements" />
+    <MESSAGE value="rm: unneeded documentation" />
+    <MESSAGE value="Feat: global notificationhelper" />
+    <MESSAGE value="Feat: automatically make notification if benchmark fails" />
+    <MESSAGE value="Feat: readAllComponents function" />
+    <MESSAGE value="language" />
+    <MESSAGE value="Feat: snarky remark if user does dumb things" />
+    <MESSAGE value="feat: snarky remark for dumb user" />
+    <MESSAGE value="Feat: notification level implementation" />
+    <MESSAGE value="Feat: show the amount of components loaded in" />
+    <MESSAGE value="Feat: marginal  notification level system" />
+    <option name="LAST_COMMIT_MESSAGE" value="Feat: marginal  notification level system" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -259,9 +471,5 @@
         </breakpoint>
       </breakpoints>
     </breakpoint-manager>
-  </component>
-  <component name="XSLT-Support.FileAssociations.UIState">
-    <expand />
-    <select />
   </component>
 </project>
