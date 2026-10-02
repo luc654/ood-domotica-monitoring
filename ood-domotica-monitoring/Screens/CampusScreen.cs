@@ -25,7 +25,6 @@ public class CampusScreen
         {
             "Select Building",
             "Calculate average of all buildings",
-            "Add building",
             "Read ALL devices",
             "View notifications",
             "Close",
@@ -37,26 +36,20 @@ public class CampusScreen
             switch (helper.handleTerminal(options, "Campus overview", "Select option to continue"))
             {
                 case 0:
-                {
                     int indexBuilding = selectBuildings();
                     new BuildingScreen(indexBuilding).Loop();
                     break;
-                }
                 case 1:
-                {
                     calculateAverage();
                     break;
-                }
+                
                 case 2:
-                    // Add new building ahh
-                    throw new NotImplementedException();
-                case 3:
                     readAllDevices();
                     break;
-                case 4:
+                case 3:
                     new NotificationScreen().Loop();
                     break;
-                case 5:
+                case 4:
                     running = false;
                     return;
             }

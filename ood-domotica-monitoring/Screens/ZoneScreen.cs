@@ -27,8 +27,6 @@ public class ZoneScreen : Screen
     {
         "Select Sensor",
         "Select Device",
-        "Add new Sensor",
-        "Add new Device",
         $"Back to {building.Name}",
     };
 
@@ -45,12 +43,6 @@ public class ZoneScreen : Screen
                 new DeviceScreen(zone, device).Loop();
                 break;
             case 2:
-                // TODO Add sennor
-                break;
-            case 3:
-                // TODO Add device
-                break;
-            case 4:
                 running = false;
                 return;
         }

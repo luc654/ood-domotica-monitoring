@@ -16,8 +16,6 @@ public class BuildingScreen : Screen
     protected override List<string> Options => new List<string>
     {
         "Select Zone",
-        "Calculate average of all zones",
-        "Add Zone",
         "Back to Campus",
     };
 
@@ -30,10 +28,6 @@ public class BuildingScreen : Screen
                 new ZoneScreen(zoneId, building).Loop();
                 break;
             case 1:
-                break;
-            case 2:
-                throw new NotImplementedException();
-            case 3:
                 running = false;
                 break;
         }
