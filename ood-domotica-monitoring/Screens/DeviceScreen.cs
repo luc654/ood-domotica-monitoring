@@ -14,7 +14,6 @@ public class DeviceScreen : Screen
     protected override List<string> Options => new List<string>()
     {
         "Read Current Value",
-        "View Notifications made by this device",
         "View specifications of this device",
         $"Return to {zone.Name} overview"
     };
